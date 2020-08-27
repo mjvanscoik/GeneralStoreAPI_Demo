@@ -17,7 +17,7 @@ namespace GeneralStoreAPI_Demo.Models
         public virtual Customer Customer { get; set; }
         [Required]
         [ForeignKey(nameof(Product))]
-        public int ProductSKU { get; set; }
+        public string ProductSKU { get; set; }
         public virtual Product Product { get; set; }
         [Required]
         public int ItemCount { get; set; }
